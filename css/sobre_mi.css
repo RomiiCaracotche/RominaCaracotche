@@ -1,0 +1,53 @@
+/* ------------ SOBRE ------------ */
+
+#sobre_mi {
+   position: relative;
+}
+
+.contenedor-sobre {
+    background-color: var(--color-celeste);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 3rem;
+}
+
+.contenedor-sobre__title{
+   margin-bottom: 2rem;
+   padding: 1rem;
+   border: 1px solid #000;
+   border-radius: 1rem;
+   box-shadow: 0 0 10px var(--color-gris-oscuro);
+ }
+
+.contenedor-sobre__body {
+    text-align: justify;
+    padding: 0 1rem;
+ }
+
+.sobre-mi__imagen {
+   position: absolute;
+   top: 38px;
+   right: 0;
+   left: 0;
+   margin: auto;
+}
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+
+/* celulares */
+@media screen and (max-width: 651px) { 
+
+   /* ------------ SOBRE ------------ */
+   .contenedor-sobre {
+       padding: 4rem 1rem;
+    }
+}
+
+/* tablets */
+@media screen and (min-width: 652px) and (max-width: 868px) {
+
+   /* ------------ SOBRE ------------ */
+   
+}

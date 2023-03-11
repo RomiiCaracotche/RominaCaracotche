@@ -1,0 +1,145 @@
+.angle {
+    position: relative;
+}
+
+.angle:after {
+    content: '';
+    position: absolute;
+}
+
+/* ------------ Angle 1 ------------ */
+
+.angle1 {
+    background-color: rgb(159, 189, 222);
+}
+
+.angle1:after {
+    background-color: rgb(227, 165, 184);
+    clip-path: polygon(50% 100%, 0 0, 0 0, 100% 0);
+}
+
+.angle1, .angle1:after {
+    height: 80px;
+    width: 100%;
+}
+
+/* ------------ Angle 7 ------------ */
+
+ .angle7 {
+    background-color: rgb(159, 189, 222);
+}
+
+.angle7:after {
+    background-color: rgb(227, 165, 184);
+    -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+.angle7, .angle7:after {
+    height: 80px;
+    width: 100%;
+}
+
+/* ------------ Angle 2 ------------ */
+
+.angle2 {
+    background-color: var(--color-rosa-fuerte);
+}
+
+.angle2:after {
+    background-color: var(--color-rosa);
+    -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+    clip-path: polygon(0 0, 100% 0, 25% 100%);
+}
+
+.angle2, .angle2:after {
+    height: 80px;
+    width: 100%;
+}
+
+/* ------------ Angle 3 ------------ */
+
+.angle3 {
+    background-color: white;
+}
+
+.angle3:after {
+    background-color: rgb(168, 181, 187);
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.angle3, .angle3:after {
+    height: 80px;
+    width: 100%;
+}
+
+/* ------------ Angle 4 ------------ */
+
+.angle4 {
+    background-color: var(--color-rosa);
+}
+
+.angle4:after {
+    background-color: var(--color-celeste-claro);;
+    /*background-color: rgb(209, 212, 212);*/
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+}
+
+.angle4, .angle4:after {
+    height: 80px;
+    width: 100%;
+}
+
+/* ------------ Angle 5 ------------ */
+
+.angle5 {
+    background-color: var(--color-celeste);
+}
+
+.angle5:after {
+    background-color: rgb(227, 165, 184);
+    clip-path: polygon(0 0, 100% 0, 75% 100%);
+}
+
+.angle5, .angle5:after {
+    height: 80px;
+    width: 100%;
+}
+
+
+/* ------------ Angle 6 ------------ */
+
+.angle6 {
+    background-color: #a1eacd;
+}
+
+.angle6:after {
+    background-color: #7689d8;
+    clip-path: polygon(50% 0, 100% 100%, 100% 100%, 0 100%);
+}
+
+.angle6, .angle6:after {
+    height: 80px;
+    width: 100%;
+}
+
+
+
+/* ------------ Angle 8 ------------ */
+
+.angle8 {
+    background-color: rgb(227, 165, 184);
+}
+
+.angle8:after {
+    background-color: rgb(159, 189, 222);
+    clip-path: polygon(50% 100%, 0 0, 0 0, 100% 0);
+}
+
+.angle8, .angle8:after {
+    height: 80px;
+    width: 100%;
+}
+

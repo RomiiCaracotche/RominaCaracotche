@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root {
+    --color-gris-oscuro: rgb(35, 63, 75);
+    --color-rosa: rgb(245, 205, 184);
+    --color-rosa-fuerte: rgb(227, 165, 184);
+    --color-celeste: rgb(159, 189, 222);
+    --color-celeste-claro: rgb(242, 237, 237);
+    --color-azul: rgb(25, 129, 231);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+
+/* ------------ HEADER ------------ */
+
+header {
+    background-color: var(--color-gris-oscuro);
+    width: 100vw;
+    min-height: 76px;  
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    object-fit: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.nav__item {
+    margin: auto 1rem;
+    height: 100%;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-rosa);
+}
+
+.nav__link:hover {
+    color: var(--color-celeste);
+    text-decoration: underline;
+    vertical-align: sub;
+}
+
+.menu {
+    display: none;
+}
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+
+/* celulares */
+@media screen and (max-width: 651px) { 
+
+    /* ------------ HEADER ------------ */
+
+    header {
+        justify-content: center;
+    }
+
+    .nav {
+        width: 100%;
+        background-color: var(--color-gris-oscuro);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 76px;
+        margin-bottom: 76px;
+    }
+
+    .nav__disabled {
+        display: none;
+    }
+
+    .nav__item {
+        padding: 1rem 0;
+        width: 100%;  
+        text-align: center; 
+        border-bottom: 1px solid var(--color-rosa);     
+    }
+
+    .nav__item:nth-child(1) {
+        border-top: 1px solid var(--color-rosa);    
+    }
+    
+    .menu {
+        display: block;
+        background-color: #F5CDB8;
+        padding: .7rem;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px; 
+        margin: 1rem; 
+    }
+
+}
+
+/* tablets */
+@media screen and (min-width: 652px) and (max-width: 868px) {
+
+    /* ------------ HEADER ------------ */
+
+    .nav {
+        width: auto;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+
+}
+
+
+
+
+

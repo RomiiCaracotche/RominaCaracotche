@@ -1,0 +1,128 @@
+#experiencia {
+    position: relative;
+}
+
+.contenedor-experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-celeste);
+    padding: 4rem 0 2rem 0;
+}
+
+.contenedor-experiencia__title {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--color-gris-oscuro);
+}
+
+.contenedor-experiencia__list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem;
+    padding: 0 2rem;
+}
+
+.contenedor-experiencia__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    width: 300px;
+    height: 300px;
+    padding: 1rem 0;
+    margin: 2rem;
+    background-color: var(--color-celeste-claro); 
+    box-shadow: 0 0 10px var(--color-gris-oscuro);
+}
+
+.contenedor-experiencia__item:hover {
+    background-color: var(--color-rosa);
+    box-shadow: 0 0 10px #fff;
+}
+
+.experiencia-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia-info__title {
+    height: 10%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.experiencia-info__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.experiencia-info__description {
+    width: 90%;
+    text-align: justify;
+    display: block;
+    display: -webkit-box;
+    height: 1rem * 1.2 * 4;
+    font-size: 1rem;
+    line-height: 1.2;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 1rem 0;
+}
+
+.experiencia-info__view {
+    border: 1px solid var(--color-celeste);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: var(--color-celeste-claro);
+    color: var(--color-celeste);
+    font-weight: bold;
+    font-size: 18px;
+    padding: .5rem;
+}
+
+.experiencia-info__view:hover {
+    background-color: var(--color-rosa);
+    color: var(--color-gris-oscuro);
+}
+
+.experiencia-info__view:active {
+    background-color: var(--color-celeste-claro);
+    color: var(--color-celeste);
+}
+
+.experiencia__imagen {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -12px;
+    margin: auto;
+}
+
+
+/*--------------- Desing Responsive ---------------*/
+
+@media screen and (max-width: 650px) {
+    .contenedor-experiencia__item {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 968px) {
+
+
+}
