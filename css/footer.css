@@ -1,7 +1,8 @@
 /* ------------ FOOTER ------------ */
 
 .footer {
-    background-color: var(--color-gris-oscuro);
+    background: rgb(100,117,238);
+    background: linear-gradient(0deg, rgba(100,117,238,1) 0%, rgba(251,69,143,1) 74%); 
     color: var(--color-celeste-claro);
     display: flex;
     flex-direction: column;
@@ -17,21 +18,41 @@
 }
 
 .footer__img {
-    width: 200px;
+    width: 450px;
+    padding: 1rem;
 }
 
+.footer__img:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
 
 .footer-info {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0 2rem 0;
 }
 
 .footer-item {
-    padding: 1rem;
+    padding: 1rem; 
     width: auto;
+    box-shadow: 0 0 15px rgb(130, 205, 245); 
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
 .footer-item__svg{
@@ -42,19 +63,80 @@
     display: flex;
     justify-content: center;
     align-items: center;
+     margin-bottom: .5rem;
 }
 
 .item-head__span {
-    color: var(--color-azul);
+    color: black;
+    font-weight: bold; 
 }
 
 .footer-item__info {
-    text-align: center;
-    color: var(--color-celeste-claro);
+    /* text-align: center; */
+    color: rgb(130, 205, 245);
     text-decoration: none;
 }
-.footer-item__info:last-child {
-    padding-left: 1.5rem;
+
+.footer-item__info:hover {
+    font-weight: bold; 
+}
+
+@-webkit-keyframes swing { 
+    15% {   -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+    30%
+        {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+        }
+    50%
+        {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+    65%
+        {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+    80%
+        {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+    100%
+        {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+}
+
+@keyframes swing {
+    15% {
+            -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+    }
+    30% {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    }
+    50% {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    }
+    65% {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+    }
+    80% {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+    }
+    100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+    }
 }
 
 /* ------------ RESPONSIVE DESIGN ------------ */
@@ -67,7 +149,16 @@
     .footer-info {
         flex-direction: column;
         justify-content: center;
-        margin-top: 1rem;
+        padding-top: 0;
+    }
+
+    .footer-item {
+        box-shadow: none; 
+    }
+
+    .footer__img {
+        width: 100%;
+        padding: 2rem;
     }
     
 }
@@ -81,6 +172,10 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 1rem;
+    }
+
+    .footer-item {
+        box-shadow: none; 
     }
 
 }

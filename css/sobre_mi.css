@@ -5,7 +5,9 @@
 }
 
 .contenedor-sobre {
-    background-color: var(--color-celeste);
+    /* background-color: var(--color-celeste); */
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +20,8 @@
    padding: 1rem;
    border: 1px solid #000;
    border-radius: 1rem;
-   box-shadow: 0 0 10px var(--color-gris-oscuro);
+   /* box-shadow: 0 0 10px var(--color-gris-oscuro); */
+   box-shadow: 0 0 15px 5px #fff;
  }
 
 .contenedor-sobre__body {
@@ -41,7 +44,7 @@
 
    /* ------------ SOBRE ------------ */
    .contenedor-sobre {
-       padding: 4rem 1rem;
+       padding: 4rem 1rem 2rem 1rem;
     }
 }
 

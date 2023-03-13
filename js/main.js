@@ -1,5 +1,7 @@
 const btnMenu = document.querySelector(".menu")
 
+const optionMain = document.querySelectorAll(".main-options__item")
+
 btnMenu.addEventListener("click", () => {
     document.querySelector(".nav").classList.toggle("nav__disabled") 
 })
