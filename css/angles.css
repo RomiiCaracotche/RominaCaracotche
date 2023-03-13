@@ -10,11 +10,11 @@
 /* ------------ Angle 1 ------------ */
 
 .angle1 {
-    background-color: black;
+    background-color: var(--color-negro);
 }
 
 .angle1:after {
-    background-color: rgba(100,117,238,1);
+    background-color: var(--color-azul);
     clip-path: polygon(50% 100%, 0 0, 0 0, 100% 0);
 }
 
@@ -27,11 +27,11 @@
 /* ------------ Angle 2 ------------ */
 
 .angle2 {
-    background-color: rgba(100,117,238,1);
+    background-color: var(--color-azul);
 }
 
 .angle2:after {
-    background-color: #000;
+    background-color: var(--color-negro);
     -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
     clip-path: polygon(0 0, 100% 0, 25% 100%);
 }
@@ -45,11 +45,11 @@
 /* ------------ Angle 4 ------------ */
 
 .angle4 {
-    background-color: #000;
+    background-color: var(--color-negro);
 }
 
 .angle4:after {
-    background-color: #fff;
+    background-color: var(--color-blanco);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
     
 }
@@ -62,11 +62,11 @@
 /* ------------ Angle 5 ------------ */
 
 .angle5 {
-    background-color: #fff;
+    background-color: var(--color-blanco);
 }
 
 .angle5:after {
-    background-color: #000;
+    background-color: var(--color-negro);
     clip-path: polygon(0 0, 100% 0, 75% 100%);
 }
 
@@ -79,11 +79,11 @@
 /* ------------ Angle 11 ------------ */
 
 .angle11 {
-    background-color: rgba(251,69,143,1);
+    background-color: var(--color-fucsia);
 }
 
 .angle11:after {
-    background-color: black;
+    background-color: var(--color-negro);
     clip-path: polygon(50% 100%, 0 0, 0 0, 100% 0);
 }
 
@@ -100,10 +100,6 @@
 
     /* ------------ MAIN ------------ */
 
-    /* .angle1, .angle1:after, .angle2, .angle2:after, .angle4, .angle4:after, .angle5, .angle5:after, .angle11, .angle11:after {
-        height: 40px;
-        width: 100%;
-    } */
 
 }
 
@@ -111,30 +107,7 @@
 @media screen and (min-width: 652px) and (max-width: 868px) {
 
     /* ------------ MAIN ------------ */
-    /* .angle1, .angle1:after {
-        height: 80px;
-        width: 100%;
-    }
 
-    .angle2, .angle2:after {
-        height: 80px;
-        width: 100%;
-    }
-
-    .angle4, .angle4:after {
-        height: 80px;
-        width: 100%;
-    }
-
-    .angle5, .angle5:after {
-        height: 80px;
-        width: 100%;
-    }
-
-    .angle11, .angle11:after {
-        height: 80px;
-        width: 100%;
-    } */
 
 }
 

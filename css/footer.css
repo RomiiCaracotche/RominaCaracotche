@@ -1,7 +1,7 @@
 /* ------------ FOOTER ------------ */
 
 .footer {
-    background: rgb(100,117,238);
+    background: var(--color-azul);
     background: linear-gradient(0deg, rgba(100,117,238,1) 0%, rgba(251,69,143,1) 74%); 
     color: var(--color-celeste-claro);
     display: flex;
@@ -40,7 +40,7 @@
 .footer-item {
     padding: 1rem; 
     width: auto;
-    box-shadow: 0 0 15px rgb(130, 205, 245); 
+    box-shadow: 0 0 15px var(--color-celeste); 
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -67,13 +67,12 @@
 }
 
 .item-head__span {
-    color: black;
+    color: var(--color-negro);
     font-weight: bold; 
 }
 
 .footer-item__info {
-    /* text-align: center; */
-    color: rgb(130, 205, 245);
+    color: var(--color-celeste);
     text-decoration: none;
 }
 

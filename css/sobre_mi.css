@@ -5,9 +5,8 @@
 }
 
 .contenedor-sobre {
-    /* background-color: var(--color-celeste); */
-    background-color: black;
-    color: white;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,10 +17,10 @@
 .contenedor-sobre__title{
    margin-bottom: 2rem;
    padding: 1rem;
-   border: 1px solid #000;
+   border: 1px solid var(--color-negro);
    border-radius: 1rem;
    /* box-shadow: 0 0 10px var(--color-gris-oscuro); */
-   box-shadow: 0 0 15px 5px #fff;
+   box-shadow: 0 0 15px 5px var(--color-blanco);
  }
 
 .contenedor-sobre__body {

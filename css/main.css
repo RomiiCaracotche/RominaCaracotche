@@ -1,7 +1,7 @@
 /* ------------ MAIN ------------ */
 
 .contenedor-main {
-    background: rgb(251,69,143);
+    background: var(--color-fucsia);
     background: linear-gradient(180deg, rgba(251,69,143,1) 33%, rgba(100,117,238,1) 100%);
     display: flex;
     justify-content: center;
@@ -24,10 +24,10 @@
 
 .main-info__nombre {
     position: relative;
-    color: #000;
+    color: var(--color-negro);
     align-self: flex-start;
     font-size: 2.5rem;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px var(--color-blanco);
     font-weight: bold;
 }
 
@@ -36,17 +36,17 @@
 }
 
 .main-info__animation {
-    background: rgb(251,69,143);
+    background: var(--color-fucsia);
     position: absolute;
     right: 0;
     width: 0;
     height: 50px;
-    border-left: 1px solid #000;
+    border-left: 1px solid var(--color-negro);
     animation: maquina-escribiendo 6s 0s 1 normal none steps(24);
 }
 
 .main-info__body {
-    color: #000;
+    color: var(--color-negro);
     text-align: justify;
     width: 100%;
     margin: 1rem;
@@ -62,14 +62,14 @@
 .main-options__item {
     list-style: none;
     margin: 1rem;
-    border: 1px solid black;
+    border: 1px solid var(--color-negro);
     border-radius: 1rem;
     padding: .5rem;
-    box-shadow: 0 0 15px 5px black;
+    box-shadow: 0 0 15px 5px var(--color-negro);
 }
 
 .main-options__item:hover {
-    box-shadow: 0 0 15px 5px white;
+    box-shadow: 0 0 15px 5px var(--color-blanco);
 } 
 
 .main-options__link {
@@ -77,13 +77,9 @@
     justify-content: center;
     align-items: center;
     margin-right: .3rem;
-    color: #000;
+    color: var(--color-negro);
     font-weight: bold;
     text-decoration: none;
-}
-
-.main-options__link:hover {
-    /* text-shadow: 0px 5px 15px #fff; */
 }
 
 .main-options__img {
@@ -104,12 +100,12 @@
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    border: 1px solid black;
-    box-shadow: 0 0 15px 5px black;
+    border: 1px solid var(--color-negro);
+    box-shadow: 0 0 15px 5px var(--color-negro);
 }
 
 .main-img:hover {
-    box-shadow: 0 0 15px 5px white;
+    box-shadow: 0 0 15px 5px var(--color-blanco);
 }
 
 .main-img > img {
@@ -183,7 +179,6 @@
     .main-img > img {
         width: 100%;
         height: 100%;
-        /* border-radius: 150px; */
     }
 
 }

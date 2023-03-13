@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root {
-    --color-gris-oscuro: rgb(35, 63, 75);
-    --color-rosa: rgb(245, 205, 184);
-    --color-rosa-fuerte: rgb(227, 165, 184);
-    --color-celeste: rgb(159, 189, 222);
-    --color-celeste-claro: rgb(242, 237, 237);
-    --color-azul: rgb(25, 129, 231);
+    --color-fucsia: rgba(251,69,143,1);
+    --color-blanco: rgb(255, 255, 255);
+    --color-negro: rgb(0, 0, 0);
+    --color-azul: rgb(100,117,238);
+    --color-celeste: rgb(130, 205, 245);
 }
 
 * {
@@ -19,7 +18,7 @@
 
 header {
     display: flex;
-    background-color: rgba(251,69,143,1);
+    background-color: var(--color-fucsia);
     width: 100vw;
     min-height: 76px;  
     display: flex;
@@ -40,12 +39,12 @@ nav {
     object-fit: cover;
     padding: .5rem;
     border-radius: 1rem;
-    border: 1px solid black;
-    box-shadow: 0 0 15px 5px black;
+    border: 1px solid var(--color-negro);
+    box-shadow: 0 0 15px 5px var(--color-negro);
 }
 
 .logo:hover {
-    box-shadow: 0 0 15px 5px white;
+    box-shadow: 0 0 15px 5px var(--color-blanco);
 }
 
 .nav {
@@ -62,17 +61,13 @@ nav {
 
 .nav__link {
     text-decoration: none;
-    color: #000;
+    color: var(--color-negro);
     font-weight: bold;
-    /* text-shadow: 0px 5px 15px #000; */
-    /* text-shadow: 0 0 15px #000; */
 }
 
 .nav__link:hover {
-    /* font-weight: normal; */
     color: white;
-    text-shadow: 0px 5px 10px black;
-    /* text-decoration: underline; */
+    text-shadow: 0px 5px 10px var(--color-negro);
     vertical-align: sub;
 }
 
@@ -89,7 +84,7 @@ nav {
 
     header {
         justify-content: center;
-        background-color: #000;
+        background-color: var(--color-negro);
         min-height: 86px; 
     }
 
@@ -98,25 +93,25 @@ nav {
         height: 30px;
         left: 20px;
         top: 20px; 
-        background-color: white;
-        border: 1px solid white;
-        box-shadow: 0 0 15px 5px white;
+        background-color: var(--color-blanco);
+        border: 1px solid var(--color-blanco);
+        box-shadow: 0 0 15px 5px var(--color-blanco);
     }
 
     .nav {
         width: 100%;
-        background-color: black;
+        background-color: var(--color-negro);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
         top: 86px;
         margin-bottom: 76px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--color-blanco);
     }
 
     .nav__link {
-        color: #fff;
+        color: var(--color-blanco);
     }
 
     .nav__disabled {
@@ -127,16 +122,16 @@ nav {
         padding: 1rem 0;
         width: 100%;  
         text-align: center; 
-        border-bottom: 1px solid white;     
+        border-bottom: 1px solid var(--color-blanco);     
     }
 
     .nav__item:first-child {
-        border-top: 2px solid white; 
+        border-top: 2px solid var(--color-blanco); 
     }
     
     .menu {
         display: block;
-        background-color: white;
+        background-color: var(--color-blanco);
         padding: .7rem;
         border-radius: 10px;
         position: absolute;
